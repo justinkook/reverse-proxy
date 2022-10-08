@@ -1,0 +1,24 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["justinkook <justinkook@gmail.com>"]
+edition = "2021"
+description = "Reverse proxy with caching."
+exclude = [".gitignore"]
+
+[dependencies]
+actix-web =  { version = "3", features = ["openssl"] }
+openssl = "0.10"
+simplelog = "0.7.6"
+log = "0.4.8"
+anyhow = "1"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+crossbeam = "0.8.0"
+notify = "4.0.15"
+regex = "1.4.4"
+url = "2.2.1"
+structopt = "0.3.21"
+blocking-delay-queue = { git = "https://github.com/dejankos/blocking-delay-queue" }
+cache = { path = "../cache" }
+core = { path = "../core" }

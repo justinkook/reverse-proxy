@@ -1,0 +1,6 @@
+# service configuration
+service:
+  # ip address
+  ip: localhost
+  # bind port
+  port: 8080
